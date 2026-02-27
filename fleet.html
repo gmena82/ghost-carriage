@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet — Ghost Carriage | 2023+ Cadillac Escalade Executive Platform</title>
+  <meta name="description" content="Ghost Carriage deploys the 2023+ Cadillac Escalade — ultra-low-profile, piloted by elite armed operators using evasive driving protocols, GPS tracking, and panic response integration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li class="nav-dropdown">
+      <a href="services.html" class="nav-link" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="services/executive-protection.html" class="nav-dropdown-item" role="menuitem">Executive Protection</a>
+        <a href="services/asset-protection.html" class="nav-dropdown-item" role="menuitem">Asset Protection</a>
+      </div>
+    </li>
+    <li><a href="fleet.html" class="nav-link active">Fleet</a></li>
+    <li><a href="locations.html" class="nav-link">Locations</a></li>
+    <li><a href="blog.html" class="nav-link">Insights</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Request Transport</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">All Services</a>
+  <a href="services/executive-protection.html">Executive Protection</a>
+  <a href="services/asset-protection.html">Asset Protection</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="locations.html">Locations</a>
+  <a href="blog.html">Insights</a>
+  <a href="contact.html" style="color: var(--accent);">Request Transport →</a>
+</div>
+
+<main class="page-content">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">The Platform</span>
+      <h1 class="heading-xl mt-3" style="max-width: 720px;">
+        <span class="text-gradient">The 2023+ Cadillac Escalade:<br>Security on Wheels</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 600px; font-size: 1.05rem; line-height: 1.75;">
+        Ghost Carriage does not operate armored vehicles. We operate something more sophisticated: elite armed professionals in ultra-low-profile executive SUVs, designed to be invisible, untrackable, and decisively capable if required.
+      </p>
+      <div class="mt-4">
+        <div class="callout" style="max-width: 580px;">
+          <p><strong style="color: var(--platinum);">Critical Note:</strong> Ghost Carriage vehicles are explicitly NON-armored. Our security model is built on concealment, speed, and operator capability — not static vehicle hardening. A vehicle that cannot be identified as a security asset cannot be targeted as one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN VEHICLE -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Wide hero image -->
+      <div class="img-placeholder wide reveal mb-6" style="aspect-ratio: 21/9;">
+        <div class="img-placeholder-corner tl"></div>
+        <div class="img-placeholder-corner tr"></div>
+        <div class="img-placeholder-corner bl"></div>
+        <div class="img-placeholder-corner br"></div>
+        <div class="img-placeholder-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="16" r="1"/></svg>
+        </div>
+        <div class="img-placeholder-label">Image Prompt</div>
+        <p class="img-placeholder-prompt" style="max-width: 640px;">
+          <strong>[Image Prompt:</strong> Cinematic, low-light shot of a sleek black 2023 Cadillac Escalade parked on a rain-slicked Kansas City street at night, subtle neon purple streetlights reflecting off the polished paint.]
+        </p>
+      </div>
+
+      <!-- Specs + description -->
+      <div class="grid-2" style="align-items: flex-start; gap: 4rem;">
+
+        <div class="reveal-left">
+          <span class="label">Vehicle Profile</span>
+          <h2 class="heading-lg mt-2 mb-4">2023+ Cadillac Escalade<br><span class="text-accent">Executive Platform</span></h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.8;">
+            The Escalade is not chosen for optics alone. It represents the optimal combination of cabin capacity, ride performance, engine capability, and — critically — anonymity. When deployed by Ghost Carriage, it bears no markings, no branded plates, and no visual indicators of its security function.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8;">
+            The vehicle is configured to provide VIP passengers with maximum comfort and privacy while simultaneously giving our operator clear sightlines, ideal positioning, and the mechanical capability needed to execute evasive driving protocols if required.
+          </p>
+        </div>
+
+        <div class="reveal-right">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Model Year</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--platinum);">2023+</div>
+            </div>
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Vehicle Class</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--platinum);">Full-Size Luxury SUV</div>
+            </div>
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Armor</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--silver);">None (Intentional)</div>
+            </div>
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Profile</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--platinum);">Ultra-Low-Profile</div>
+            </div>
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Markings</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--platinum);">None / Unlisted</div>
+            </div>
+            <div style="padding: 1.1rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.3rem;">Passenger Capacity</div>
+              <div style="font-size: 1rem; font-weight: 700; color: var(--platinum);">Up to 6 VIP</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SECURITY SYSTEMS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-6">
+        <span class="label" style="justify-content: center;">Onboard Capability</span>
+        <h2 class="heading-lg mt-2 reveal">What the Vehicle Brings to the Mission</h2>
+      </div>
+
+      <div class="grid-2 reveal" data-stagger="0.1">
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Real-Time GPS Tracking</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Continuous location data transmitted to the Ghost Carriage operations team. Every movement is logged and monitored in real-time, providing immediate response capability if the vehicle deviates from its planned route.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Encrypted Comms System</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">All operator-to-ops communications are conducted on encrypted channels. Client conversations within the vehicle are never recorded or transmitted.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Panic Response Integration</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">A discreet panic response system allows either the client or operator to trigger immediate escalation protocols. Response assets are pre-positioned before each engagement.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Evasive Driving Capability</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">All Ghost Carriage operators are trained in defensive and evasive driving. The Escalade's engine and handling profile are well-suited for rapid acceleration and controlled evasion maneuvers.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Off-Grid Booking Available</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">For clients requiring maximum operational security, vehicles can be booked and deployed through encrypted channels with no digital trail connecting the client to the service.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 2rem;">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Armed Operator Protocol</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Every Ghost Carriage driver is a trained EP operator carrying a licensed firearm. The vehicle's security capability lives in the operator — not the metal surrounding the client.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- INTERIOR IMAGE -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 4rem;">
+
+        <div class="reveal-left">
+          <span class="label">Cabin Environment</span>
+          <h2 class="heading-lg mt-2 mb-4">The Interior: Your<br><span class="text-accent">Secure Command Space</span></h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.8;">
+            Inside a Ghost Carriage Escalade, the client environment is designed for productivity, discretion, and comfort. The cabin is configured to provide complete visual privacy from outside while maintaining a spacious, executive-grade interior.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.7rem;">
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--silver);">
+              <span style="color: var(--accent);">✦</span> Premium black leather seating — full VIP configuration
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--silver);">
+              <span style="color: var(--accent);">✦</span> Privacy glass — exterior visibility eliminated
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--silver);">
+              <span style="color: var(--accent);">✦</span> No exterior branding, decals, or identifiers
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--silver);">
+              <span style="color: var(--accent);">✦</span> Climate-controlled cabin — 2023 Escalade premium HVAC
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--silver);">
+              <span style="color: var(--accent);">✦</span> Discreet separation between operator and passenger compartment
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal-right">
+          <div class="img-placeholder" style="aspect-ratio: 4/3;">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-corner bl"></div>
+            <div class="img-placeholder-corner br"></div>
+            <div class="img-placeholder-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="2"/><circle cx="12" cy="16" r="1"/></svg>
+            </div>
+            <div class="img-placeholder-label">Image Prompt</div>
+            <p class="img-placeholder-prompt">
+              <strong>[Image Prompt:</strong> Wide interior shot of a 2023 Cadillac Escalade passenger cabin. Premium black leather, pristine condition, showing a spacious and confidential environment for VIPs, dark mode aesthetic.]
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="border-top: 1px solid rgba(167,139,250,0.1); background: rgba(167,139,250,0.02);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">The Vehicle is Ready. The Operator is Ready.</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 440px; margin: 0 auto 2rem;">Book Ghost Carriage and move with the confidence that only a fully armed, fully prepared security professional behind the wheel can deliver.</p>
+      <a href="contact.html" class="btn-primary reveal">Request Secure Transport</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Elite armed executive transport and secure asset mobility. Kansas City's only hybrid executive protection and transport service.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">Armed</span>
+          <span class="badge badge-silver">NDA-Backed</span>
+          <span class="badge badge-silver">24/7</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/executive-protection.html">Executive Protection</a></li>
+          <li><a href="services/asset-protection.html">Asset Protection</a></li>
+          <li><a href="services.html#airport">Airport Transfers</a></li>
+          <li><a href="services.html#events">Event Mobility</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="fleet.html">Our Fleet</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="blog.html">Intelligence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Secure Intake Form</a></li>
+          <li><a href="mailto:ops@ghostcarriage.com">ops@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City, Missouri</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

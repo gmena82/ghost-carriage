@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Intelligence — Ghost Carriage Blog</title>
+  <meta name="description" content="Ghost Carriage security intelligence: executive protection insights, threat analysis, FIFA World Cup security briefings, and armed transport operational guidance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li class="nav-dropdown">
+      <a href="services.html" class="nav-link" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="services/executive-protection.html" class="nav-dropdown-item" role="menuitem">Executive Protection</a>
+        <a href="services/asset-protection.html" class="nav-dropdown-item" role="menuitem">Asset Protection</a>
+      </div>
+    </li>
+    <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+    <li><a href="locations.html" class="nav-link">Locations</a></li>
+    <li><a href="blog.html" class="nav-link active">Insights</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Request Transport</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">All Services</a>
+  <a href="services/executive-protection.html">Executive Protection</a>
+  <a href="services/asset-protection.html">Asset Protection</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="locations.html">Locations</a>
+  <a href="blog.html">Insights</a>
+  <a href="contact.html" style="color: var(--accent);">Request Transport →</a>
+</div>
+
+<main class="page-content">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Security Intelligence</span>
+      <h1 class="heading-xl mt-3" style="max-width: 640px;">
+        <span class="text-gradient">Intelligence Briefings<br>&amp; Operational Insights</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 520px; font-size: 1.05rem; line-height: 1.75;">
+        Ghost Carriage publishes security intelligence relevant to executive protection, mobile security operations, and the threat landscape in Kansas City and beyond.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="section">
+    <div class="container">
+
+      <div style="margin-bottom: 1rem;">
+        <span class="label">Featured Article</span>
+      </div>
+
+      <a href="blog/post-1.html" class="reveal" style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        text-decoration: none;
+        padding: 2rem;
+        border: 1px solid var(--border-glass);
+        border-radius: 20px;
+        background: var(--bg-glass);
+        backdrop-filter: blur(12px);
+        margin-bottom: 3rem;
+        transition: border-color 0.3s, box-shadow 0.3s, transform 0.4s;
+      "
+      onmouseover="this.style.borderColor='rgba(167,139,250,0.3)'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 50px rgba(0,0,0,0.5)'"
+      onmouseout="this.style.borderColor=''; this.style.transform=''; this.style.boxShadow=''">
+        <div class="img-placeholder" style="aspect-ratio: 16/9; margin: 0;">
+          <div class="img-placeholder-corner tl"></div>
+          <div class="img-placeholder-corner tr"></div>
+          <div class="img-placeholder-corner bl"></div>
+          <div class="img-placeholder-corner br"></div>
+          <div class="img-placeholder-label">Image Prompt</div>
+          <p class="img-placeholder-prompt" style="font-size: 0.78rem;">
+            <strong>[Image Prompt:</strong> A blurred, bustling luxury stadium VIP entrance at night, stylized in dark monochromatic tones with a sleek black vehicle approaching.]
+          </p>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <span class="badge badge-orange">Security Intel</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Feb 2026 · 5 min read</span>
+          </div>
+          <h2 style="font-family: var(--font-head); font-size: clamp(1.15rem, 2.5vw, 1.6rem); font-weight: 700; color: var(--platinum); margin-bottom: 1rem; line-height: 1.35; transition: color 0.3s;"
+              onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--platinum)'">
+            Executive Security Readiness: Kansas City &amp; The FIFA World Cup Surge
+          </h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.5rem;">
+            The influx of international VIPs, federation executives, and high-profile sponsors during the 2026 FIFA World Cup will create a security demand that traditional unarmed black car services are structurally incapable of meeting. Here's what that means — and what to do about it.
+          </p>
+          <span style="color: var(--accent); display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">
+            Read Full Article
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- ALL POSTS GRID -->
+      <div style="margin-bottom: 1rem;">
+        <span class="label">All Articles</span>
+      </div>
+
+      <div class="grid-3 reveal" data-stagger="0.1">
+
+        <a href="blog/post-2.html" class="blog-card" style="text-decoration: none;">
+          <div class="img-placeholder" style="aspect-ratio: 16/8; border-radius: 12px 12px 0 0; border-bottom: none; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-label" style="font-size: 0.55rem;">Prompt</div>
+            <p class="img-placeholder-prompt" style="font-size: 0.72rem;">
+              <strong>[Image Prompt:</strong> A sophisticated security agent in a dark suit looking at a digital tablet with route planning graphics in a dimly lit, high-tech security operations center.]
+            </p>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>Operational Edge</span> · <span style="color: var(--text-muted);">4 min</span>
+            </div>
+            <h3 class="blog-card-title">The Proactive Edge: Why Executive Protection Is More Than a Bodyguard</h3>
+            <p class="blog-card-excerpt">Bodyguards react. EP agents prevent. The critical distinction between reactive security and proactive threat mitigation.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span class="blog-read-more">Read Article <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <span style="font-size: 0.7rem; color: var(--text-muted);">Feb 2026</span>
+          </div>
+        </a>
+
+        <!-- Placeholder future articles -->
+        <div class="blog-card" style="opacity: 0.55;">
+          <div class="img-placeholder" style="aspect-ratio: 16/8; border-radius: 12px 12px 0 0; border-bottom: none;">
+            <div class="img-placeholder-label" style="font-size: 0.55rem;">Coming Soon</div>
+            <p class="img-placeholder-prompt" style="font-size: 0.72rem;">
+              <strong>[Image Prompt:</strong> A sleek encrypted smartphone resting on a dark executive desk, neon purple UI reflection visible on the polished surface.]
+            </p>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>Operational</span> · <span style="color: var(--text-muted);">Coming Soon</span>
+            </div>
+            <h3 class="blog-card-title" style="color: var(--text-secondary);">Off-Grid Booking: Why Total Communication Silence Might Be Your Best Security Move</h3>
+            <p class="blog-card-excerpt">How eliminating digital booking trails protects clients from pre-operation surveillance.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Publishing Soon</span>
+          </div>
+        </div>
+
+        <div class="blog-card" style="opacity: 0.55;">
+          <div class="img-placeholder" style="aspect-ratio: 16/8; border-radius: 12px 12px 0 0; border-bottom: none;">
+            <div class="img-placeholder-label" style="font-size: 0.55rem;">Coming Soon</div>
+            <p class="img-placeholder-prompt" style="font-size: 0.72rem;">
+              <strong>[Image Prompt:</strong> Wide shot of Kansas City International Airport at night, luxury SUV positioned trackside, armed operator standing by in professional attire.]
+            </p>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>Airport Security</span> · <span style="color: var(--text-muted);">Coming Soon</span>
+            </div>
+            <h3 class="blog-card-title" style="color: var(--text-secondary);">The Private Aviation Gap: Why Tarmac-to-Destination Is the Most Vulnerable Transit Moment</h3>
+            <p class="blog-card-excerpt">From wheels-down to final destination, private aviation clients face maximum exposure in transit.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Publishing Soon</span>
+          </div>
+        </div>
+
+        <div class="blog-card" style="opacity: 0.55;">
+          <div class="img-placeholder" style="aspect-ratio: 16/8; border-radius: 12px 12px 0 0; border-bottom: none;">
+            <div class="img-placeholder-label" style="font-size: 0.55rem;">Coming Soon</div>
+            <p class="img-placeholder-prompt" style="font-size: 0.72rem;">
+              <strong>[Image Prompt:</strong> A high-value jewelry collection in a secure transport case, surrounded by dark leather and steel in the interior of a luxury SUV.]
+            </p>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>Asset Protection</span> · <span style="color: var(--text-muted);">Coming Soon</span>
+            </div>
+            <h3 class="blog-card-title" style="color: var(--text-secondary);">High-Value Asset Transit: Why Armored Trucks Attract More Attention Than Protection</h3>
+            <p class="blog-card-excerpt">The counterintuitive truth about conspicuous security and why low-profile operations outperform traditional methods.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Publishing Soon</span>
+          </div>
+        </div>
+
+        <div class="blog-card" style="opacity: 0.55;">
+          <div class="img-placeholder" style="aspect-ratio: 16/8; border-radius: 12px 12px 0 0; border-bottom: none;">
+            <div class="img-placeholder-label" style="font-size: 0.55rem;">Coming Soon</div>
+            <p class="img-placeholder-prompt" style="font-size: 0.72rem;">
+              <strong>[Image Prompt:</strong> A retainer client file and a custom NDA document on a dark executive desk with a subtle neon purple desk lamp casting focused light.]
+            </p>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>Client Strategy</span> · <span style="color: var(--text-muted);">Coming Soon</span>
+            </div>
+            <h3 class="blog-card-title" style="color: var(--text-secondary);">Why a Security Retainer Is the Smartest Executive Investment You're Not Making</h3>
+            <p class="blog-card-excerpt">The cost-per-threat calculation that makes ongoing retainer programs the logical choice for high-exposure executives.</p>
+          </div>
+          <div class="blog-card-footer">
+            <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Publishing Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="border-top: 1px solid rgba(167,139,250,0.1); background: rgba(167,139,250,0.02);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">Don't Just Read About It.</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 440px; margin: 0 auto 2rem;">Apply this intelligence to your own security posture. Ghost Carriage is ready to provide a complimentary threat assessment for new clients.</p>
+      <a href="contact.html" class="btn-primary reveal">Request Secure Transport</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Elite armed executive transport and secure asset mobility. Kansas City's only hybrid executive protection and transport service.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">Armed</span>
+          <span class="badge badge-silver">NDA-Backed</span>
+          <span class="badge badge-silver">24/7</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/executive-protection.html">Executive Protection</a></li>
+          <li><a href="services/asset-protection.html">Asset Protection</a></li>
+          <li><a href="services.html#airport">Airport Transfers</a></li>
+          <li><a href="services.html#events">Event Mobility</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="fleet.html">Our Fleet</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="blog.html">Intelligence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Secure Intake Form</a></li>
+          <li><a href="mailto:ops@ghostcarriage.com">ops@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City, Missouri</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

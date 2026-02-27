@@ -1,0 +1,13 @@
+{
+  "name": "ghost-carriage",
+  "version": "1.0.0",
+  "description": "Ghost Carriage — Armed Executive Transport & Asset Protection",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html --ignore=node_modules",
+    "start": "live-server --port=3000 --open=index.html --ignore=node_modules"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Ghost Carriage — Mission, Team &amp; Philosophy</title>
+  <meta name="description" content="Ghost Carriage was founded by security professionals Shelby DuBois and Mark Allen. Our mission: allow every client to exercise their normal way of life while safety remains at the highest level." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link active">About</a></li>
+    <li class="nav-dropdown">
+      <a href="services.html" class="nav-link" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="services/executive-protection.html" class="nav-dropdown-item" role="menuitem">Executive Protection</a>
+        <a href="services/asset-protection.html" class="nav-dropdown-item" role="menuitem">Asset Protection</a>
+      </div>
+    </li>
+    <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+    <li><a href="locations.html" class="nav-link">Locations</a></li>
+    <li><a href="blog.html" class="nav-link">Insights</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Request Transport</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">All Services</a>
+  <a href="services/executive-protection.html">Executive Protection</a>
+  <a href="services/asset-protection.html">Asset Protection</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="locations.html">Locations</a>
+  <a href="blog.html">Insights</a>
+  <a href="contact.html" style="color: var(--accent);">Request Transport →</a>
+</div>
+
+<main class="page-content">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Our Story</span>
+      <h1 class="heading-xl mt-3 page-hero-desc" style="max-width: 680px; margin-top: 1rem;">
+        <span class="text-gradient">Security as a Philosophy,<br>Not Just a Service</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 560px; font-size: 1.05rem;">
+        Founded by trained security professionals who recognized a critical gap in the market. Ghost Carriage exists because executive safety cannot be an afterthought.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSION & FOUNDERS -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 5rem;">
+
+        <div class="reveal-left">
+          <div class="img-placeholder tall">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-corner bl"></div>
+            <div class="img-placeholder-corner br"></div>
+            <div class="img-placeholder-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="img-placeholder-label">Image Prompt</div>
+            <p class="img-placeholder-prompt">
+              <strong>[Image Prompt:</strong> Two professional executive protection agents in tailored dark suits, standing confidently in a modern, dimly lit high-end corporate lobby. Silver and subtle neon purple ambient lighting.]
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <span class="label">Mission</span>
+          <h2 class="heading-lg mt-2 mb-4">Failure Is Not an Option</h2>
+          <blockquote class="quote-block mb-4">
+            <p>"To allow each client and their family to freely exercise their normal way of life with minimal interruption — while safety and security remain at the highest level."</p>
+          </blockquote>
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Ghost Carriage was founded by <strong style="color: var(--platinum);">Shelby DuBois</strong> and <strong style="color: var(--platinum);">Mark Allen</strong>, two professionals who saw the same problem in every city they operated in: executives settling for luxury transportation with zero tactical capability.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+            A chauffeured Escalade looks impressive. But the moment a credible threat emerges, an unarmed civilian driver is a liability — not an asset. We built Ghost Carriage to eliminate that gap entirely.
+          </p>
+          <p style="color: var(--text-secondary);">
+            Our operators are not drivers who carry firearms. They are trained executive protection professionals who also drive. That distinction makes every difference.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CORE VALUES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-6">
+        <span class="label" style="justify-content: center;">Operating Principles</span>
+        <h2 class="heading-lg mt-2 reveal">What Drives Every Decision</h2>
+      </div>
+
+      <div class="grid-3 reveal" data-stagger="0.1">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Proactive Threat Assessment</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">We conduct in-depth advance work, intelligence gathering, and background analysis before any engagement. We identify threats before they become incidents.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Encrypted Communications</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">All operational communications are encrypted. Client information, travel itineraries, and meeting schedules are never transmitted on unsecured channels.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">NDA-Backed Confidentiality</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Every engagement is governed by a mutual non-disclosure agreement. Your identity, movements, and the fact you used our services remain strictly confidential.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">24/7 Operational Readiness</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Threats do not operate on business hours. Neither do we. Our team maintains round-the-clock readiness for both preplanned and emergency engagements.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Low-Profile Operations</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">True security is invisible. Our operators blend into the executive environment seamlessly, drawing no attention while maintaining total awareness.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Compliance &amp; Accountability</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">All armed operations are conducted under strict legal compliance. Every operator holds valid licensure, and all engagements adhere to federal and state regulations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- HOW WE OPERATE -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: flex-start; gap: 5rem;">
+
+        <div>
+          <span class="label">Operational Framework</span>
+          <h2 class="heading-lg mt-2 mb-4 reveal">How Ghost Carriage <span class="text-accent">Operates</span></h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot">1</div>
+              <div>
+                <h4 class="heading-sm mb-2">Secure Intake &amp; NDA Execution</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Initial contact is made through encrypted channels. Client identity and engagement details are secured under NDA before any planning begins.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot">2</div>
+              <div>
+                <h4 class="heading-sm mb-2">Advance Work &amp; Threat Assessment</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Our team conducts pre-engagement reconnaissance: route analysis, venue assessment, background checks on key contacts, and threat probability mapping.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot">3</div>
+              <div>
+                <h4 class="heading-sm mb-2">Mission Briefing &amp; Deployment</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Operators receive full mission briefs including contingency protocols, primary and alternate routes, communication checkpoints, and emergency escalation procedures.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot">4</div>
+              <div>
+                <h4 class="heading-sm mb-2">Execution &amp; Real-Time Monitoring</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Throughout the engagement, GPS tracking, encrypted communications, and real-time threat monitoring keep every movement accountable and secure.</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal" style="padding-bottom: 0;">
+              <div class="timeline-dot">5</div>
+              <div>
+                <h4 class="heading-sm mb-2">After-Action &amp; Client Debrief</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Post-engagement, our team documents observations and provides clients with a secure debrief on any notable threat intelligence gathered during the operation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="img-placeholder" style="aspect-ratio: 4/3; margin-bottom: 2rem;">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-corner bl"></div>
+            <div class="img-placeholder-corner br"></div>
+            <div class="img-placeholder-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+            </div>
+            <div class="img-placeholder-label">Image Prompt</div>
+            <p class="img-placeholder-prompt">
+              <strong>[Image Prompt:</strong> A tactical advance-planning digital document next to a black encrypted earpiece on a dark slate table. Minimalist, high contrast, subtle neon purple UI glow.]
+            </p>
+          </div>
+
+          <div class="card" style="text-align: center; border-color: rgba(167,139,250,0.2);">
+            <div style="font-family: var(--font-head); font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;">Ghost Carriage Guarantee</div>
+            <p style="font-size: 0.9rem; color: var(--silver); font-style: italic; line-height: 1.7;">"We do not send drivers. We deploy operators. Every person behind the wheel of a Ghost Carriage vehicle is a trained protection professional first."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="background: rgba(167,139,250,0.025); border-top: 1px solid rgba(167,139,250,0.1);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">Work With Ghost Carriage</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 440px; margin: 0 auto 2rem; font-size: 0.97rem;">Your security begins the moment you reach out. Our intake process is confidential, efficient, and designed to eliminate friction.</p>
+      <a href="contact.html" class="btn-primary reveal">Begin Secure Intake</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Elite armed executive transport and secure asset mobility. Kansas City's only hybrid executive protection and transport service. Confidential. Lethal. Discreet.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">Armed</span>
+          <span class="badge badge-silver">NDA-Backed</span>
+          <span class="badge badge-silver">24/7</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/executive-protection.html">Executive Protection</a></li>
+          <li><a href="services/asset-protection.html">Asset Protection</a></li>
+          <li><a href="services.html#airport">Airport Transfers</a></li>
+          <li><a href="services.html#events">Event Mobility</a></li>
+          <li><a href="services.html#retainer">Retainer Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="fleet.html">Our Fleet</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="blog.html">Intelligence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Secure Intake Form</a></li>
+          <li><a href="mailto:ops@ghostcarriage.com">ops@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City, Missouri</li>
+          <li style="color: var(--text-muted); font-size: 0.84rem; margin-top: 0.5rem;">NDA available upon request.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
