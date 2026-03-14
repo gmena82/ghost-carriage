@@ -166,7 +166,7 @@ button { font-family: inherit; }
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 20px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-6px);
   min-width: 220px;
@@ -176,10 +176,22 @@ button { font-family: inherit; }
   border: 1px solid var(--border-mid);
   border-radius: 12px;
   padding: 0.5rem 0;
+  padding-top: 1.25rem;
+  margin-top: 0;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s, transform 0.25s;
   box-shadow: 0 16px 40px rgba(0,0,0,0.8), 0 0 0 0.5px var(--accent-dim) inset;
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: transparent;
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
