@@ -39,7 +39,7 @@ body {
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
-  cursor: none; /* hide default — custom cursor active */
+  cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,7 +47,7 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 ul { list-style: none; }
-button { font-family: inherit; cursor: none; }
+button { font-family: inherit; }
 
 /* ---------- Canvas Background ---------- */
 #bg-canvas {
@@ -67,46 +67,6 @@ button { font-family: inherit; cursor: none; }
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-size: 256px 256px;
   opacity: 0.028;
-}
-
-/* ---------- Custom Cursor ---------- */
-#cursor {
-  position: fixed;
-  top: 0; left: 0;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: #fff;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  transition: transform 0.08s linear, width 0.25s var(--transition), height 0.25s var(--transition);
-  will-change: transform;
-}
-
-#cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  width: 38px; height: 38px;
-  border-radius: 50%;
-  border: 1px solid rgba(167,139,250,0.5);
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              width 0.3s var(--transition),
-              height 0.3s var(--transition),
-              border-color 0.3s;
-  will-change: transform;
-}
-
-body.cursor-hover #cursor {
-  width: 16px; height: 16px;
-}
-
-body.cursor-hover #cursor-ring {
-  width: 58px; height: 58px;
-  border-color: var(--accent);
 }
 
 /* ---------- Glassmorphism Navigation ---------- */
@@ -269,7 +229,7 @@ body.cursor-hover #cursor-ring {
   display: none;
   flex-direction: column;
   gap: 5px;
-  cursor: none;
+  cursor: pointer;
   padding: 4px;
 }
 
@@ -436,7 +396,7 @@ h1, h2, h3, h4, h5 {
   border: none;
   outline: none;
   isolation: isolate;
-  cursor: none;
+  cursor: pointer;
   transition: color var(--transition), box-shadow var(--transition);
   z-index: 0;
 }
@@ -499,7 +459,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   background: transparent;
-  cursor: none;
+  cursor: pointer;
   transition: border-color var(--transition), color var(--transition), background var(--transition);
 }
 
@@ -1229,6 +1189,56 @@ footer {
 }
 
 .callout p { color: var(--silver); margin: 0; font-size: 0.95rem; }
+
+/* ---------- FAQ Accordion ---------- */
+.faq-item {
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  background: var(--bg-glass);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+
+.faq-item:hover,
+.faq-item[open] {
+  border-color: rgba(167,139,250,0.2);
+}
+
+.faq-item summary {
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--platinum);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.3rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  font-size: 0.93rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
 
 /* ---------- Misc ---------- */
 .sr-only {

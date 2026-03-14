@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Travel — Ghost Carriage | Kansas City Executive Transportation</title>
+  <meta name="description" content="Ghost Carriage corporate travel programs: reliable executive transport, VIP guest pickup, event coordination, and corporate billing. Transportation that reflects your brand." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html" class="nav-link">Home</a></li>
+    <li><a href="../about.html" class="nav-link">About</a></li>
+    <li class="nav-dropdown">
+      <a href="../services.html" class="nav-link active" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="../services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="airport.html" class="nav-dropdown-item" role="menuitem">Airport Transfers</a>
+        <a href="corporate.html" class="nav-dropdown-item" role="menuitem" style="color: var(--accent);">Corporate Travel</a>
+      </div>
+    </li>
+    <li><a href="../fleet.html" class="nav-link">Fleet</a></li>
+    <li><a href="../pricing.html" class="nav-link">Pricing</a></li>
+    <li><a href="../locations.html" class="nav-link">Service Area</a></li>
+    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+  </ul>
+  <a href="../contact.html" class="nav-cta">Book a Ride</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../services.html">All Services</a>
+  <a href="airport.html">Airport Transfers</a>
+  <a href="corporate.html">Corporate Travel</a>
+  <a href="../fleet.html">Fleet</a>
+  <a href="../pricing.html">Pricing</a>
+  <a href="../locations.html">Service Area</a>
+  <a href="../blog.html">Blog</a>
+  <a href="../contact.html" style="color: var(--accent);">Book a Ride →</a>
+</div>
+
+<main class="page-content">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom: 1.5rem; font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+        <a href="../services.html" style="color: var(--text-muted); transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Services</a>
+        <span>›</span>
+        <span style="color: var(--accent);">Corporate Travel</span>
+      </nav>
+      <span class="label">For Organizations</span>
+      <h1 class="heading-xl mt-3" style="max-width: 720px;">
+        <span class="text-gradient">Transportation That<br>Reflects Your Brand</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 580px; font-size: 1.05rem; line-height: 1.75;">
+        Your transportation provider becomes part of your company's experience. Ghost Carriage helps organizations create consistency — every ride, every guest, every time.
+      </p>
+      <div class="mt-4" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+        <span class="badge badge-orange">Corporate Billing</span>
+        <span class="badge badge-silver">Priority Scheduling</span>
+        <span class="badge badge-silver">Monthly Invoicing</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- WHAT WE DELIVER -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 5rem;">
+
+        <div class="reveal-left">
+          <span class="label">What We Deliver</span>
+          <h2 class="heading-lg mt-2 mb-4">
+            Consistent Service<br><span class="text-accent">Every Time</span>
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+            Ghost Carriage helps organizations create consistency by delivering transportation that is professional, predictable, and polished.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div class="feature-icon" style="margin: 0; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--platinum);">Reliable Executive Travel</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Daily schedules handled with precision. Executives arrive on time, every time.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div class="feature-icon" style="margin: 0; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16v-2a4 4 0 0 0-4-4H5"/><polyline points="5 7 12 14 5 21"/></svg>
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--platinum);">VIP Guest Pickup Programs</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Visiting clients and partners receive a first impression that matches your brand standards.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div class="feature-icon" style="margin: 0; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--platinum);">Event Transportation Coordination</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Conferences, corporate dinners, and multi-day events coordinated from start to finish.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--border-glass); border-radius: 10px; background: var(--bg-glass);">
+              <div class="feature-icon" style="margin: 0; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--platinum);">Discreet Professional Chauffeurs</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Drivers who understand business context and operate with professionalism at all times.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="img-placeholder" style="aspect-ratio: 4/3; margin-bottom: 2rem;">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-corner bl"></div>
+            <div class="img-placeholder-corner br"></div>
+            <div class="img-placeholder-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L7 7h10z"/></svg>
+            </div>
+            <div class="img-placeholder-label">Image Prompt</div>
+            <p class="img-placeholder-prompt">
+              <strong>[Image Prompt:</strong> A suited professional stepping out of a black Cadillac Escalade IQ in front of a modern glass office building, morning light, cinematic corporate atmosphere.]
+            </p>
+          </div>
+          <div class="callout">
+            <p>"Your transportation provider becomes part of your company's experience. We make sure that part is always impressive."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CORPORATE BILLING -->
+  <section class="section" style="background: rgba(167,139,250,0.015);">
+    <div class="container">
+      <div class="text-center mb-6">
+        <span class="label" style="justify-content: center;">Billing Programs</span>
+        <h2 class="heading-lg mt-2 reveal">Corporate Account Setup</h2>
+        <p class="reveal" style="color: var(--text-secondary); max-width: 520px; margin: 1rem auto 0; font-size: 0.97rem;">Companies may establish transportation programs that remove the need for employees or assistants to manage individual ride payments.</p>
+      </div>
+
+      <div class="grid-3 reveal" data-stagger="0.1">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Monthly Invoicing</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">One invoice at month end covering all trips. Simplified accounting and no individual expense reports.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Ride Reporting</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">Full records of dates, routes, and costs for every trip taken under your account.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Priority Scheduling</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">Account holders receive priority access to vehicles during peak periods and short-notice requests.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Centralized Booking</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">One point of contact for all transportation needs across your team. Simplified coordination for assistants and operations staff.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2a4 4 0 0 0-4-4H5"/><polyline points="5 7 12 14 5 21"/><line x1="3" y1="12" x2="8" y2="12"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Airport Program</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">Recurring airport pickup and drop-off schedules managed automatically. Ideal for teams with frequent travelers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Event Coordination</h3>
+          <p style="font-size: 0.87rem; color: var(--text-secondary);">Multi-vehicle logistics for conferences, client dinners, board meetings, and corporate retreats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="border-top: 1px solid rgba(167,139,250,0.1); background: rgba(167,139,250,0.02);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">Set Up a Corporate Account</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 460px; margin: 0 auto 2rem;">Contact us to discuss your organization's transportation needs and we'll build a program around them.</p>
+      <div class="reveal" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="../contact.html" class="btn-primary">Contact Us</a>
+        <a href="../pricing.html" class="btn-secondary">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Kansas City's only all-electric luxury chauffeur service. Cadillac Escalade IQ and Vistiq fleet.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">All-Electric</span>
+          <span class="badge badge-silver">Luxury Fleet</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="airport.html">Airport Transfers</a></li>
+          <li><a href="corporate.html">Corporate Travel</a></li>
+          <li><a href="../services.html">All Services</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../fleet.html">Our Fleet</a></li>
+          <li><a href="../locations.html">Service Area</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="../contact.html">Book a Ride</a></li>
+          <li><a href="mailto:info@ghostcarriage.com">info@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City Metro · KS &amp; MO</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

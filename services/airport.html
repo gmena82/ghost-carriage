@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airport Transfers — Ghost Carriage | Kansas City Flight-Monitored Pickup</title>
+  <meta name="description" content="Ghost Carriage airport transfers: real-time flight monitoring, delay tracking, and precision pickup timing. MCI and private aviation. Your vehicle is waiting before you step outside." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html" class="nav-link">Home</a></li>
+    <li><a href="../about.html" class="nav-link">About</a></li>
+    <li class="nav-dropdown">
+      <a href="../services.html" class="nav-link active" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="../services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="airport.html" class="nav-dropdown-item" role="menuitem" style="color: var(--accent);">Airport Transfers</a>
+        <a href="corporate.html" class="nav-dropdown-item" role="menuitem">Corporate Travel</a>
+      </div>
+    </li>
+    <li><a href="../fleet.html" class="nav-link">Fleet</a></li>
+    <li><a href="../pricing.html" class="nav-link">Pricing</a></li>
+    <li><a href="../locations.html" class="nav-link">Service Area</a></li>
+    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+  </ul>
+  <a href="../contact.html" class="nav-cta">Book a Ride</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../services.html">All Services</a>
+  <a href="airport.html">Airport Transfers</a>
+  <a href="corporate.html">Corporate Travel</a>
+  <a href="../fleet.html">Fleet</a>
+  <a href="../pricing.html">Pricing</a>
+  <a href="../locations.html">Service Area</a>
+  <a href="../blog.html">Blog</a>
+  <a href="../contact.html" style="color: var(--accent);">Book a Ride →</a>
+</div>
+
+<main class="page-content">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom: 1.5rem; font-size: 0.78rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+        <a href="../services.html" style="color: var(--text-muted); transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Services</a>
+        <span>›</span>
+        <span style="color: var(--accent);">Airport Transfers</span>
+      </nav>
+      <span class="label">Precision Ground Transport</span>
+      <h1 class="heading-xl mt-3" style="max-width: 720px;">
+        <span class="text-gradient">Airport Travel<br>Without Guesswork</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 560px; font-size: 1.05rem; line-height: 1.75;">
+        We monitor flights. We track delays. We confirm pickup timing.<br>
+        You step outside. Your vehicle is already there.
+      </p>
+      <p class="mt-3" style="color: var(--silver); font-size: 1rem; font-weight: 500;">No searching. No waiting.</p>
+      <div class="mt-4" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+        <span class="badge badge-orange">Flight-Monitored</span>
+        <span class="badge badge-silver">MCI Airport</span>
+        <span class="badge badge-silver">Private Aviation</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-6">
+        <span class="label" style="justify-content: center;">The Protocol</span>
+        <h2 class="heading-lg mt-2 reveal">Engineered Around Your Flight</h2>
+        <p class="reveal" style="color: var(--text-secondary); max-width: 540px; margin: 1rem auto 0; font-size: 0.97rem;">Every airport transfer is synced to real-time flight data. We don't guess when you land — we know.</p>
+      </div>
+
+      <div class="grid-3 reveal" data-stagger="0.12">
+        <div class="feature-card" style="position: relative;">
+          <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; color: rgba(167,139,250,0.08); line-height: 1;">01</div>
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Flight Monitoring</h3>
+          <p style="font-size: 0.86rem; color: var(--text-secondary);">Your flight is tracked from departure. Gate changes, delays, diversions — we see everything in real time and adjust accordingly.</p>
+        </div>
+        <div class="feature-card" style="position: relative;">
+          <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; color: rgba(167,139,250,0.08); line-height: 1;">02</div>
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Delay Tracking</h3>
+          <p style="font-size: 0.86rem; color: var(--text-secondary);">If your flight is delayed 30 minutes or 3 hours, it doesn't matter. We recalibrate staging automatically. No calls needed from you.</p>
+        </div>
+        <div class="feature-card" style="position: relative;">
+          <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; color: rgba(167,139,250,0.08); line-height: 1;">03</div>
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/></svg>
+          </div>
+          <h3 class="heading-sm mb-2">Precision Pickup</h3>
+          <p style="font-size: 0.86rem; color: var(--text-secondary);">Your vehicle is positioned and waiting before you reach the curb. You step outside, the door opens, and you're moving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- COVERAGE -->
+  <section class="section" style="background: rgba(167,139,250,0.015);">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 5rem;">
+
+        <div class="reveal-left">
+          <span class="label">Coverage</span>
+          <h2 class="heading-lg mt-2 mb-4">
+            Commercial &amp; Private<br><span class="text-accent">Aviation</span>
+          </h2>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="padding: 1.5rem; border: 1px solid var(--border-glass); border-radius: 14px; background: var(--bg-glass);">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span class="badge badge-silver">Commercial</span>
+                <span style="font-weight: 700; color: var(--platinum); font-size: 0.95rem;">MCI Airport</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">Real-time commercial flight tracking, terminal-specific staging, and immediate departure. Arrivals and departures both covered.</p>
+              <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--silver);"><span style="color: var(--accent);">✦</span> Curbside staging at your terminal</li>
+                <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--silver);"><span style="color: var(--accent);">✦</span> Departure pickups synced to your schedule</li>
+              </ul>
+            </div>
+
+            <div style="padding: 1.5rem; border: 1px solid rgba(167,139,250,0.2); border-radius: 14px; background: rgba(167,139,250,0.04);">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span class="badge badge-orange">Private Aviation</span>
+                <span style="font-weight: 700; color: var(--platinum); font-size: 0.95rem;">FBO &amp; Charter</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">Tarmac-side coordination for private charter arrivals. Your driver meets you at the aircraft, handles luggage, and executes the route.</p>
+              <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--silver);"><span style="color: var(--accent);">✦</span> FBO liaison and tarmac-side staging</li>
+                <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--silver);"><span style="color: var(--accent);">✦</span> Private aviation terminals covered</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="img-placeholder" style="aspect-ratio: 4/3;">
+            <div class="img-placeholder-corner tl"></div>
+            <div class="img-placeholder-corner tr"></div>
+            <div class="img-placeholder-corner bl"></div>
+            <div class="img-placeholder-corner br"></div>
+            <div class="img-placeholder-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16v-2a4 4 0 0 0-4-4H5"/><polyline points="5 7 12 14 5 21"/><line x1="3" y1="12" x2="8" y2="12"/></svg>
+            </div>
+            <div class="img-placeholder-label">Image Prompt</div>
+            <p class="img-placeholder-prompt">
+              <strong>[Image Prompt:</strong> A polished black Cadillac Escalade IQ staged at Kansas City International Airport arrivals lane at dusk, vehicle door open, cinematic wide angle, moody lighting.]
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BAND -->
+  <section class="section-sm" style="background: rgba(167,139,250,0.025); border-top: 1px solid rgba(167,139,250,0.1); border-bottom: 1px solid rgba(167,139,250,0.1);">
+    <div class="container text-center">
+      <blockquote class="reveal" style="max-width: 700px; margin: 0 auto;">
+        <p style="font-family: var(--font-head); font-size: clamp(1.1rem, 3vw, 1.5rem); font-weight: 600; color: var(--platinum); line-height: 1.6;">
+          "We monitor flights. We track delays. We confirm pickup timing. You step outside — your vehicle is already there."
+        </p>
+        <footer style="margin-top: 1.25rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent);">
+          — Ghost Carriage Airport Protocol
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="border-top: 1px solid rgba(167,139,250,0.1); background: rgba(167,139,250,0.02);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">Book Your Airport Transfer</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 460px; margin: 0 auto 2rem;">Share your flight details and destination. We handle the rest — from touchdown to front door.</p>
+      <div class="reveal" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="../contact.html" class="btn-primary">Book a Ride</a>
+        <a href="../pricing.html" class="btn-secondary">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Kansas City's only all-electric luxury chauffeur service. Cadillac Escalade IQ and Vistiq fleet.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">All-Electric</span>
+          <span class="badge badge-silver">Luxury Fleet</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="airport.html">Airport Transfers</a></li>
+          <li><a href="corporate.html">Corporate Travel</a></li>
+          <li><a href="../services.html">All Services</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../fleet.html">Our Fleet</a></li>
+          <li><a href="../locations.html">Service Area</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="../contact.html">Book a Ride</a></li>
+          <li><a href="mailto:info@ghostcarriage.com">info@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City Metro · KS &amp; MO</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

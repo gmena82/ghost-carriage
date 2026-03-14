@@ -119,40 +119,8 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
 
 /* ═══════════════════════════════════════════════════════════
-   2. CUSTOM CURSOR
+   2. (Custom cursor removed)
    ═══════════════════════════════════════════════════════════ */
-(function initCursor() {
-  const dot  = document.getElementById('cursor');
-  const ring = document.getElementById('cursor-ring');
-  if (!dot || !ring) return;
-
-  let cx = window.innerWidth / 2, cy = window.innerHeight / 2;
-  let rx = cx, ry = cy;
-
-  document.addEventListener('mousemove', e => {
-    cx = e.clientX; cy = e.clientY;
-    dot.style.left = cx + 'px';
-    dot.style.top  = cy + 'px';
-  });
-
-  (function animRing() {
-    rx += (cx - rx) * 0.14;
-    ry += (cy - ry) * 0.14;
-    ring.style.left = rx + 'px';
-    ring.style.top  = ry + 'px';
-    requestAnimationFrame(animRing);
-  })();
-
-  /* Expand on interactive elements */
-  const interactives = 'a, button, [role="button"], input, textarea, select, label, .card, .blog-card, .feature-card, .pricing-card, .btn-primary, .btn-secondary, .nav-link';
-
-  document.addEventListener('mouseover', e => {
-    if (e.target.closest(interactives)) document.body.classList.add('cursor-hover');
-  });
-  document.addEventListener('mouseout', e => {
-    if (e.target.closest(interactives)) document.body.classList.remove('cursor-hover');
-  });
-})();
 
 
 /* ═══════════════════════════════════════════════════════════

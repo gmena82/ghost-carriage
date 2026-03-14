@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Ghost Carriage | Clear Luxury Chauffeur Rates Kansas City</title>
+  <meta name="description" content="Ghost Carriage pricing: flat airport transfers, hourly chauffeur service, event packages, and corporate billing. Clear pricing, no surprises. Quotes provided before confirmation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="grain-overlay" aria-hidden="true"></div>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon" aria-hidden="true"></div>
+    Ghost<span>&nbsp;Carriage</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li class="nav-dropdown">
+      <a href="services.html" class="nav-link" aria-haspopup="true">Services ▾</a>
+      <div class="nav-dropdown-menu" role="menu">
+        <a href="services.html" class="nav-dropdown-item" role="menuitem">All Services</a>
+        <a href="services/airport.html" class="nav-dropdown-item" role="menuitem">Airport Transfers</a>
+        <a href="services/corporate.html" class="nav-dropdown-item" role="menuitem">Corporate Travel</a>
+      </div>
+    </li>
+    <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+    <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+    <li><a href="locations.html" class="nav-link">Service Area</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Book a Ride</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">All Services</a>
+  <a href="services/airport.html">Airport Transfers</a>
+  <a href="services/corporate.html">Corporate Travel</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="locations.html">Service Area</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html" style="color: var(--accent);">Book a Ride →</a>
+</div>
+
+<main class="page-content">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Transparent Rates</span>
+      <h1 class="heading-xl mt-3" style="max-width: 680px;">
+        <span class="text-gradient">Clear Pricing.<br>No Surprises.</span>
+      </h1>
+      <p class="page-hero-desc mt-3" style="color: var(--text-secondary); max-width: 560px; font-size: 1.05rem; line-height: 1.75;">
+        Ghost Carriage believes luxury transportation should feel organized and predictable. Quotes are provided before confirmation — always.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICE TYPES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-6">
+        <span class="label" style="justify-content: center;">What We Offer</span>
+        <h2 class="heading-lg mt-2 reveal">Service Options</h2>
+      </div>
+
+      <div class="grid-2 reveal" data-stagger="0.1" style="margin-bottom: 4rem;">
+
+        <div class="pricing-card">
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem;">Airport Transfer</div>
+          <div class="price-amount">Flat Rate</div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.75rem 0 1.5rem; line-height: 1.6;">Flat pricing based on pickup location and destination. Quote provided at booking. No meter running, no surprises.</div>
+          <ul style="display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time flight monitoring included
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              MCI and private aviation terminals
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Wait time included for arrivals
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-secondary w-full" style="display: flex; justify-content: center;">Get a Quote</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div style="position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #000; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 0 0 8px 8px;">Most Popular</div>
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; margin-top: 0.5rem;">Hourly Chauffeur</div>
+          <div class="price-amount" style="color: var(--accent);">By the Hour</div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.75rem 0 1.5rem; line-height: 1.6;">A dedicated driver and vehicle for as long as you need. Perfect for full days, multi-stop schedules, or important events.</div>
+          <ul style="display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Escalade IQ or Vistiq available
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Professional, trained chauffeur
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-stop, flexible routing
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Confirmed rate before booking
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-primary w-full" style="display: flex; justify-content: center;">Request Booking</a>
+        </div>
+
+        <div class="pricing-card">
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem;">Event Package</div>
+          <div class="price-amount">Custom</div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.75rem 0 1.5rem; line-height: 1.6;">Weddings, galas, corporate events, and formal occasions. Coordinated arrival and departure with polished, professional presentation.</div>
+          <ul style="display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Timeline coordination included
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Multiple vehicles available
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Quotes based on event specifics
+            </li>
+          </ul>
+          <a href="contact.html" class="btn-secondary w-full" style="display: flex; justify-content: center;">Request a Quote</a>
+        </div>
+
+        <div class="pricing-card">
+          <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem;">Corporate Billing</div>
+          <div class="price-amount">Account</div>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin: 0.75rem 0 1.5rem; line-height: 1.6;">Establish a company account with monthly invoicing, centralized booking, and ride reporting. Removes the need to manage individual payments.</div>
+          <ul style="display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Monthly invoicing
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Priority scheduling
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: var(--silver);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ride reporting &amp; centralized booking
+            </li>
+          </ul>
+          <a href="services/corporate.html" class="btn-secondary w-full" style="display: flex; justify-content: center;">Learn More</a>
+        </div>
+
+      </div>
+
+      <!-- HOW PRICING WORKS -->
+      <div style="background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 20px; padding: 2.5rem; max-width: 760px; margin: 0 auto;" class="reveal">
+        <h3 class="heading-md mb-3">How Final Pricing Works</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.8;">Final pricing depends on a few factors. We work through these with you before confirming any booking:</p>
+        <div class="grid-2" style="gap: 1rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--silver); font-size: 0.9rem;">
+            <span style="color: var(--accent); font-size: 1.1rem;">✦</span> Distance
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--silver); font-size: 0.9rem;">
+            <span style="color: var(--accent); font-size: 1.1rem;">✦</span> Vehicle type
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--silver); font-size: 0.9rem;">
+            <span style="color: var(--accent); font-size: 1.1rem;">✦</span> Timing
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--silver); font-size: 0.9rem;">
+            <span style="color: var(--accent); font-size: 1.1rem;">✦</span> Duration
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; padding: 1rem 1.25rem; border: 1px solid rgba(167,139,250,0.2); border-radius: 10px; background: rgba(167,139,250,0.04); font-size: 0.88rem; color: var(--silver); line-height: 1.7;">
+          <strong style="color: var(--platinum);">Your quote is confirmed before your booking is locked in.</strong> No hidden fees, no surprises on pickup day.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="border-top: 1px solid rgba(167,139,250,0.1); background: rgba(167,139,250,0.02);">
+    <div class="container text-center">
+      <h2 class="heading-lg mb-3 reveal"><span class="text-gradient">Get Your Quote</span></h2>
+      <p class="reveal" style="color: var(--text-secondary); max-width: 440px; margin: 0 auto 2rem;">Tell us about your trip. We'll send you a clear, confirmed rate before anything is booked.</p>
+      <a href="contact.html" class="btn-primary reveal">Request a Quote</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="nav-logo-icon" aria-hidden="true"></div>
+          Ghost<span>&nbsp;Carriage</span>
+        </a>
+        <p>Kansas City's only all-electric luxury chauffeur service. Cadillac Escalade IQ and Vistiq fleet.</p>
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem;">
+          <span class="badge badge-orange">All-Electric</span>
+          <span class="badge badge-silver">Luxury Fleet</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/airport.html">Airport Transfers</a></li>
+          <li><a href="services/corporate.html">Corporate Travel</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="fleet.html">Our Fleet</a></li>
+          <li><a href="locations.html">Service Area</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="contact.html">Book a Ride</a></li>
+          <li><a href="mailto:info@ghostcarriage.com">info@ghostcarriage.com</a></li>
+          <li style="color: var(--text-muted); font-size: 0.84rem;">Kansas City Metro · KS &amp; MO</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ghost Carriage. All rights reserved.</p>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
