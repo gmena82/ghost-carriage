@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    }
-  ]
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false
 }
